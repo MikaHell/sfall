@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.26403.0
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35327.3
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ddraw", "ddraw.vcxproj", "{FB9023DA-CA5E-4704-B601-407810963EF0}"
 EndProject
@@ -13,14 +13,15 @@ EndProject
 Project("{911E67C6-3D85-4FCE-B560-20A9C3E3FF48}") = "FALLOUT2", "C:\Games\Fallout2\FALLOUT2.EXE", "{0554CA27-B50E-4D65-B264-2A48A7007441}"
 	ProjectSection(DebuggerProjectSystem) = preProject
 		PortSupplier = 00000000-0000-0000-0000-000000000000
-		Executable = C:\Games\Fallout2\FALLOUT2.EXE
+		Executable = C:\F2\F2_rpu\fallout2.exe
 		RemoteMachine = DebugPC
-		StartingDirectory = C:\Games\Fallout2
-		Environment = Default
+		StartingDirectory = C:\F2\F2_rpu
+		Environment = Par défaut
 		LaunchingEngine = 3b476d35-a401-11d2-aad4-00c04f990171
 		UseLegacyDebugEngines = No
 		LaunchSQLEngine = No
 		AttachLaunchAction = No
+		IORedirection = Auto
 	EndProjectSection
 EndProject
 Global

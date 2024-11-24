@@ -46,9 +46,11 @@ You need to set DLL overrides for `ddraw.dll` to __"native, builtin"__ in `winec
 
 ### Prerequisites:
 
-* Visual Studio 2015 with **Windows XP support for C++** component. If you're using Visual Studio 2017/2019/2022, make sure to install **VS 2015 C++ build tools (v140)**.
-* [DirectX SDK (June 2010)](https://www.microsoft.com/en-us/download/details.aspx?id=6812). You will also need `ddraw.lib` from DXSDK February 2010 and `dinput.lib` from DXSDK August 2007. Both files can be found in the [DirectX SDK Collection repo](https://github.com/NovaRain/DXSDK_Collection).
-* [DirectX Runtime (June 2010)](https://www.microsoft.com/en-us/download/details.aspx?id=8109). You can also install it from DirectX SDK installer.
+* Visual Studio 2022 *
+- Install VS 2015 C++ build tools (v140) from Visual Studio Installer
+- Download or Clone https://github.com/NovaRain/DXSDK_Collection
+- In Visual Studio, Project Properties, C/C++, General, Other Include Directories, Add DXSDK_Collection\DXSDK_Jun2010\Include
+- In Visual Studio, Project Properties, Links editor, General, Additional library directories, Add DXSDK_Collection\DXSDK_Aug2007\Lib\x86 and after DXSDK_Collection\DXSDK_Jun2010\Lib\x86
 
 ### Steps:
 

@@ -22,6 +22,7 @@
     <ProjectGuid>{FB9023DA-CA5E-4704-B601-407810963EF0}</ProjectGuid>
     <RootNamespace>sfall</RootNamespace>
     <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
@@ -45,7 +46,7 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
     <ConfigurationType>DynamicLibrary</ConfigurationType>
     <CharacterSet>NotSet</CharacterSet>
-    <PlatformToolset>v140_xp</PlatformToolset>
+    <PlatformToolset>v143</PlatformToolset>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
   <ImportGroup Label="ExtensionSettings">
@@ -110,7 +111,7 @@
       <AssemblerListingLocation>$(IntDir)/%(RelativeDir)/</AssemblerListingLocation>
       <ObjectFileName>$(IntDir)/%(RelativeDir)/</ObjectFileName>
       <ForcedIncludeFiles>stdafx.h;%(ForcedIncludeFiles)</ForcedIncludeFiles>
-      <AdditionalIncludeDirectories>$(DXSDK_DIR)Include\</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\FalloutDev\DXSDK_Collection\DXSDK_Jun2010\Include</AdditionalIncludeDirectories>
       <AdditionalOptions>/Zc:threadSafeInit- %(AdditionalOptions)</AdditionalOptions>
     </ClCompile>
     <Link>
@@ -132,7 +133,7 @@
       <ImageHasSafeExceptionHandlers>false</ImageHasSafeExceptionHandlers>
       <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
       <ShowProgress>LinkVerbose</ShowProgress>
-      <AdditionalLibraryDirectories>$(DXSDK_DIR)lib\x86\</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>C:\Program Files (x86)\Microsoft SDKs\Windows\v7.1A\Include;C:\FalloutDev\DXSDK_Collection\DXSDK_Aug2007\Lib\x86;C:\FalloutDev\DXSDK_Collection\DXSDK_Jun2010\Lib\x86</AdditionalLibraryDirectories>
     </Link>
     <PostBuildEvent>
       <Command>"$(ProjectDir)postbuild.cmd" debug "$(TargetPath)"</Command>
