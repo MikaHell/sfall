@@ -46,7 +46,7 @@ You need to set DLL overrides for `ddraw.dll` to __"native, builtin"__ in `winec
 
 ### Prerequisites:
 
-* Visual Studio 2022
+- Visual Studio 2022
 - Install VS 2015 C++ build tools (v140) from Visual Studio Installer
 - Download or Clone https://github.com/NovaRain/DXSDK_Collection
 - In Visual Studio, Project Properties, C/C++, General, Other Include Directories, Add DXSDK_Collection\DXSDK_Jun2010\Include
